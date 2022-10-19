@@ -6,7 +6,7 @@
 /*   By: ael-maar <ael-maar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 11:35:01 by ael-maar          #+#    #+#             */
-/*   Updated: 2022/10/19 12:50:29 by ael-maar         ###   ########.fr       */
+/*   Updated: 2022/10/19 18:30:31 by ael-maar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *str);
 char	*read_from_file(int fd, char *left);
+char	*check_nl_and_alloc_left(char *line);
 
 #endif
