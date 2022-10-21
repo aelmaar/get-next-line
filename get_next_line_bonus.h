@@ -6,13 +6,12 @@
 /*   By: ael-maar <ael-maar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:08:01 by ael-maar          #+#    #+#             */
-/*   Updated: 2022/10/19 18:30:38 by ael-maar         ###   ########.fr       */
+/*   Updated: 2022/10/21 17:34:46 by ael-maar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_BONUS_H
 # define GET_NEXT_LINE_BONUS_H
-# define MAX 4096
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>

@@ -6,7 +6,7 @@
 /*   By: ael-maar <ael-maar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 17:13:35 by ael-maar          #+#    #+#             */
-/*   Updated: 2022/10/19 18:32:28 by ael-maar         ###   ########.fr       */
+/*   Updated: 2022/10/21 17:16:29 by ael-maar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,7 @@ char	*read_from_file(int fd, char *left)
 		if (buf[i] == '\n')
 			break ;
 		i = 0;
-		while (buf[i])
-			buf[i++] = 0;
+		buf[0] = 0;
 		r = read(fd, buf, BUFFER_SIZE);
 	}
 	return (line);
