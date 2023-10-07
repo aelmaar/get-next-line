@@ -6,7 +6,7 @@
 /*   By: ael-maar <ael-maar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:08:01 by ael-maar          #+#    #+#             */
-/*   Updated: 2022/10/21 17:34:46 by ael-maar         ###   ########.fr       */
+/*   Updated: 2023/10/07 20:13:48 by ael-maar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,13 @@
 # include <stdlib.h>
 # include <limits.h>
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *str);
 char	*read_from_file(int fd, char *left);
-char	*check_nl_and_alloc_left(char *line);
+char	*slice_newline(char *line);
 
 #endif
